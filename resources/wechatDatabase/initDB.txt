@@ -1,0 +1,10 @@
+insert into user(userid,username,password,pic) values ('000001','sqaeja','5f434af7c955f840654cc4f7d0590f6c','imgs/000001.jpg');
+insert into user(userid,username,password,pic) values ('000002','0qh8pk','4e99e32f786740bfd64e339bd375c5f1','imgs/000002.jpg');
+insert into user(userid,username,password,pic) values ('000003','u5b8p3','5872354e910feb158e5e714f3fe61fd3','imgs/000003.jpg');
+insert into user(userid,username,password,pic) values ('000004','a9hx02','f75564c935ac9151e29104e4ca100234','imgs/000004.jpg');
+insert into user(userid,username,password,pic) values ('000005','fgfbcr','d08693d531c8a17cac6c94bf7574a498','imgs/000005.jpg');
+insert into user(userid,username,password,pic) values ('000006','4kfca6','a2d9f1087ae21f91e238f1a305ee7d0c','imgs/000006.jpg');
+insert into user(userid,username,password,pic) values ('000007','o7phah','0ffa177fed9444ca2a90eb8b408bfd33','imgs/000007.jpg');
+insert into user(userid,username,password,pic) values ('000008','7g9uh0','8621833273bc4940e7038ce727e861b2','imgs/000008.jpg');
+insert into user(userid,username,password,pic) values ('000009','5k424o','e87934be7994483380f238ce9a4551c7','imgs/000009.jpg');
+insert into user(userid,username,password,pic) values ('000010','zhcld4','f62262c899019b75064cf518d886e6cf','imgs/000010.jpg');

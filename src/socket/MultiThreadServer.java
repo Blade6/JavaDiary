@@ -48,6 +48,7 @@ public class MultiThreadServer extends JFrame {
 				Socket socket = serverSocket.accept();
 				// 注意46行等待客户端的socket请求，如果客户端没有请求
 				// 那么服务器的线程将停在46行，一直等待
+				// accept()方法接受新的客户端的请求，每个客户端仅接受一次
 				
 				// Display the client number
 				jta.append("Starting thread for client " + clientNo +
