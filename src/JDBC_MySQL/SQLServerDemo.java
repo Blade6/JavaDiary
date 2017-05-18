@@ -1,8 +1,8 @@
-package JDBC;
+package JDBC_MySQL;
 
 import java.sql.*;
 
-public class SQLServer {
+public class SQLServerDemo {
 
 	public static void main(String [] args) {
 		String dbName = "gwedu";

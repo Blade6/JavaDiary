@@ -1,4 +1,4 @@
-package JDBC;
+package JDBC_MySQL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class MySQL {
+public class MysqlDemo {
 
 	public static void main(String[] args) {
 		// 驱动程序名
@@ -50,8 +50,7 @@ public class MySQL {
 				// 输出结果
 				System.out.println(rs.getString("userid") + "\t" + rs.getString("username"));
 			}
-					
-					
+							
 			rs.close();
 			statement.close();
 			conn.close();
