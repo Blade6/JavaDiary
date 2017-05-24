@@ -1,4 +1,4 @@
-package AdvancedDataStructure;
+package advancedDataStructure;
 
 public class SplayTree<E extends Comparable<? super E>> {
 

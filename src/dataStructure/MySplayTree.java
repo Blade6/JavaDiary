@@ -1,4 +1,4 @@
-package DataStructure;
+package dataStructure;
 
 // 完全由自己理解实现
 // 伸展树

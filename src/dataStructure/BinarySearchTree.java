@@ -1,4 +1,4 @@
-package DataStructure;
+package dataStructure;
 
 // 二叉查找树，也称二叉排序树
 public class BinarySearchTree<E extends Comparable<? super E>> {

@@ -1,4 +1,4 @@
-package JDBC_MySQL;
+package jdbc_mysql;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;

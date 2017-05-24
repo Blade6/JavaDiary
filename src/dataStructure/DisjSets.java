@@ -1,4 +1,4 @@
-package DataStructure;
+package dataStructure;
 
 // 不相交集类，Disjoint Sets
 public class DisjSets {

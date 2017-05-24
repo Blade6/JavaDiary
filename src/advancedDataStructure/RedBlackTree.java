@@ -1,4 +1,4 @@
-package AdvancedDataStructure;
+package advancedDataStructure;
 
 // ºìºÚÊ÷
 public class RedBlackTree<E extends Comparable<? super E>> {
