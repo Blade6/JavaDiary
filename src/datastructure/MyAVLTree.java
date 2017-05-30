@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 public class MyAVLTree<E extends Comparable<? super E>> {
 

@@ -12,6 +12,8 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
+// 运行说明，首先在eclipse启动服务器端
+// 然后在bin目录下用控制台启动两个客户端(java socket/TicTacClient)，两个客户端一起下棋
 public class TicTacToeServer extends JFrame implements TicTacToeConstants {
 
 	public static void main(String[] args) {

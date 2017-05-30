@@ -1,7 +1,7 @@
 package graph;
 
-import dataStructure.BinaryHeap;
-import dataStructure.DisjSets;
+import datastructure.BinaryHeap;
+import datastructure.DisjSets;
 
 // 最小生成树
 public class MinimumSpanningTree extends UndirectedGraph {

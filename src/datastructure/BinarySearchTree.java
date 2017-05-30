@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 // ¶ş²æ²éÕÒÊ÷£¬Ò²³Æ¶ş²æÅÅĞòÊ÷
 public class BinarySearchTree<E extends Comparable<? super E>> {

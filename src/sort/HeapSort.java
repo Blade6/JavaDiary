@@ -1,6 +1,6 @@
 package sort;
 
-import dataStructure.Heap;
+import datastructure.Heap;
 
 public class HeapSort {
 

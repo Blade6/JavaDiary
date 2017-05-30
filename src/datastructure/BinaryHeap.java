@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 // 小根二叉堆，数组下标从1开始
 public class BinaryHeap<E extends Comparable<? super E>> {

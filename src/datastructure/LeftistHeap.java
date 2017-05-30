@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 // 左式堆
 // 任一节点X的零路径长(null path length)npl(X)定义为X到一个不具有两个儿子的节点的最短路径的长。

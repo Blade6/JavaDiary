@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 // 二项队列：二项树的集合，每一个高度上至多存在一棵二项树。
 // 高度为k的二项树恰好有2^k个节点，而在深度d处的节点数是二项系数(k,d)

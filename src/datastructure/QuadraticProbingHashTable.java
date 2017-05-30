@@ -1,4 +1,4 @@
-package dataStructure;
+package datastructure;
 
 // 使用平方探测方法的散列表
 // H_i = (H(key) + d_i) % m
