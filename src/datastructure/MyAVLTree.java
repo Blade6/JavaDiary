@@ -1,5 +1,6 @@
 package datastructure;
 
+// 平衡二叉查找树，左子树和右子树的高度最多相差1
 public class MyAVLTree<E extends Comparable<? super E>> {
 
 	private static class AvlNode<E> {

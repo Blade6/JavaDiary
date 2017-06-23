@@ -109,8 +109,11 @@ public class BinarySearchTree<E extends Comparable<? super E>> {
 		else if (compareResult > 0)
 			t.right = remove(x, t.right);
 		else if (t.left != null && t.right != null) {
+			BinaryNode<E> tmp = t.left;
 			t.element = findMin(t.right).element;
+			t.left = tmp;
 			t.right = remove(t.element, t.right);
+			// 注意：《数据结构与算法分析》一书中并没有112行与114行，我认为书中有错误。
 		} else
 			t = (t.left != null) ? t.left : t.right;
 		

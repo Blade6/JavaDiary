@@ -6,20 +6,22 @@ import genericity.GenericStack;
 public class EvaluateExpression {
 
 	public static void main(String[] args) {
-		if (args.length < 1) {
-			System.out.println(
-				"Usage: java EvaluateExpression expressions");
-			System.exit(0);
-		}
+//		if (args.length < 1) {
+//			System.out.println(
+//				"Usage: java EvaluateExpression expressions");
+//			System.exit(0);
+//		}
 		
 		StringBuilder expression = new StringBuilder();
 		for (int i = 0; i < args.length; i++)
 			expression.append(args[i]);
 		
 		try {
-			System.out.println(evaluateExpression(expression.toString()));
+			//System.out.println(evaluateExpression(expression.toString()));
+			System.out.println(evaluateExpression("1+2"));
 		}
 		catch (Exception ex) {
+			ex.printStackTrace();
 			System.out.println("Wrong expression");
 		}
 	}
@@ -40,19 +42,29 @@ public class EvaluateExpression {
 				continue;
 			else if (token.charAt(0) == '+' || token.charAt(0) == '-') {
 				while (!operatorStack.isEmpty() &&
-					(operatorStack.peek() == '+') ||
-					(operatorStack.peek() == '-') ||
-					(operatorStack.peek() == '*') ||
-					(operatorStack.peek() == '/')) {
+					(operatorStack.peek() == '+' ||
+					operatorStack.peek() == '-' ||
+					operatorStack.peek() == '*' ||
+					operatorStack.peek() == '/')) {
+					processAnOperator(operandStack, operatorStack);
+				}
+				operatorStack.push(token.charAt(0));
+			}
+			else if (token.charAt(0) == '*' || token.charAt(0) == '/') {
+				while (!operatorStack.isEmpty() &&
+					(operatorStack.peek() == '*' ||
+					operatorStack.peek() == '/')) {
 					processAnOperator(operandStack, operatorStack);
 				}
 				operatorStack.push(token.charAt(0));
 			}
 			else if (token.trim().charAt(0) == '(')
 				operatorStack.push('(');
-			else if (token.trim().charAt(0) == ')')
+			else if (token.trim().charAt(0) == ')') {
 				while (operatorStack.peek() != '(')
 					processAnOperator(operandStack, operatorStack);
+				operatorStack.pop();
+			}	
 			else
 				operandStack.push(new Integer(token));
 		}

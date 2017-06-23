@@ -21,7 +21,8 @@ public class AccountWithSyncUsingLock {
 		executor.shutdown();
 		
 		while (!executor.isTerminated()){
-			
+			// 保证main线程比所有线程晚结束
+			// 否则28行不会在所有线程结束后输出，会提早输出
 		}
 		
 		System.out.println(account.getBalance());
